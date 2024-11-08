@@ -1,11 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfqk5yqi38ulf"]
+[gd_scene load_steps=5 format=3 uid="uid://cfqk5yqi38ulf"]
 
 [ext_resource type="Texture2D" uid="uid://07dn1gsw6enf" path="res://assets/PNG_Parts&Spriter_Animation/Ship1/Ship1.png" id="1_hbro8"]
 [ext_resource type="Script" path="res://script/sprite_2d.gd" id="1_ofspv"]
+[ext_resource type="Texture2D" uid="uid://bawcuetduokhm" path="res://assets/PNG_Parts&Spriter_Animation/Ship1/Exhaust/Normal_flight/Exhaust1/exhaust1.png" id="3_fr0xu"]
+[ext_resource type="Script" path="res://script/turbo.gd" id="4_n3wol"]
 
 [node name="naveShip" type="Sprite2D"]
 script = ExtResource("1_ofspv")
 
 [node name="naveShip" type="Sprite2D" parent="."]
-position = Vector2(-1, 4)
+position = Vector2(-3, 3)
 texture = ExtResource("1_hbro8")
+
+[node name="turbo" type="Sprite2D" parent="naveShip"]
+position = Vector2(-44, -1)
+texture = ExtResource("3_fr0xu")
+script = ExtResource("4_n3wol")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

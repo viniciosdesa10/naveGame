@@ -7,7 +7,11 @@
 
 [node name="bg" type="Sprite2D" parent="."]
 
-[node name="SpaceBackground1" type="Sprite2D" parent="."]
-position = Vector2(969, 310)
+[node name="SpaceBackground1" type="TextureRect" parent="."]
+offset_left = -14.0
+offset_top = -216.0
+offset_right = 12348.0
+offset_bottom = 864.0
 texture = ExtResource("1_s7fb2")
+stretch_mode = 1
 script = ExtResource("2_0tgam")

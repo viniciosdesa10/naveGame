@@ -1,4 +1,4 @@
-extends Sprite2D
+extends TextureRect
 
 # Velocidade do movimento do background
 var speed = Vector2(50, 0) # (50, 0) significa mover para a direita
